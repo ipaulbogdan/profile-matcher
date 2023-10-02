@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profileMatcher
+    username: local-user
+    password: local-password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+campaign-api:
+  base-url: http://localhost:1080
+  campaigns: /campaigns
